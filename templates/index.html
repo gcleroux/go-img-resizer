@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Custom Image Processor & PDF Exporter</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <h1>Image Processing & PDF Export</h1>
+    <div class="frame-settings">
+      <label
+        >Frame Width (inches):
+        <input type="number" id="frameWidth" value="8" step="0.1"
+      /></label>
+      <label
+        >Frame Height (inches):
+        <input type="number" id="frameHeight" value="10" step="0.1"
+      /></label>
+      <label>DPI: <input type="number" id="dpi" value="300" /></label>
+      <label>Rotate 90°: <input type="checkbox" id="rotate" /></label>
+      <label
+        >Keep Aspect Ratio: <input type="checkbox" id="keepAspect" checked
+      /></label>
+      <label>
+        Crop Image:
+        <input type="checkbox" id="cropImage" />
+      </label>
+    </div>
+    <div id="drop-zone">Drag and drop images here</div>
+    <div id="preview"></div>
+    <button id="export-btn">Export PDF</button>
+
+    <script src="/static/script.js"></script>
+  </body>
+</html>
